@@ -1,4 +1,6 @@
-//Arrow Functions!!
+/***********************************************************
+ * Arrow Function Intro
+ ***********************************************************/
 
 //Classic
 const numbers = [0, 1, 2];
@@ -10,7 +12,6 @@ numbers.map(function(number){
 numbers.map(number => console.log(number));
 
 //diff
-
 const quotient1 = {
     numbers: [1, 2, 3, 4, 5, 6, 7],
     results: [],
@@ -41,3 +42,15 @@ const quotient = {
 
 quotient.divideFn(3);
 console.log(quotient.results);
+
+//more than one argument
+const greet = (fname, age) => ({
+    fname,
+    age
+});
+
+console.log(greet('Steve', 18));
+// [LOG]: {
+//     "fname": "Steve",
+//         "age": 18
+// }
