@@ -1,13 +1,13 @@
 const person = {
-    name: 'Jeff',
+    fname: 'Jeff',
     age: 30,
-    hobbies: ['reading', 'cooking'];
+    hobbies: ['reading', 'cooking']
 }
 
-const { name, age } = person;
-console.log(name, age);
+const { fname, age } = person;
+console.log(fname, age);
 
-const { name: firstName } = person;
+const { fname: firstName } = person;
 console.log(firstName);
 
 const numbers = [0, 1, 2];
@@ -19,11 +19,11 @@ console.log(a);
 const response1 = {
     count: 10,
     data: [{
-        name: 'Luke Skywalker',
+        fullname: 'Luke Skywalker',
         films: ['Empire Strikes Back', 'The Force Awakens']
     }]
 };
-const { count, data: [{ name, films }]} = response1;
+const { count, data: [{ fullname, films }]} = response1;
 console.log(films);
 console.log(films[0]);
 
